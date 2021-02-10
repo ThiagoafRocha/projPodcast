@@ -22,21 +22,21 @@ class _LoginScreenState extends State<LoginScreen> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Spacer(),
-                  SpoticastLogo(width: 500, height: 500),
+                  ApplicationLogo(width: 500, height: 500),
                   Spacer(),
                   MenuButton(
                     icon: FacebookIcon,
-                    buttonTitle: 'Entrar com o Facebook',
+                    text: 'Entrar com o Facebook',
                     onPressed: () {},
                   ),
                   MenuButton(
                     icon: GoogleIcon,
-                    buttonTitle: 'Entrar com o Google',
+                    text: 'Entrar com o Google',
                     onPressed: () {},
                   ),
                   MenuButton(
                     icon: Icon(Icons.email_sharp),
-                    buttonTitle: 'Cadastrar com e-mail',
+                    text: 'Cadastrar com e-mail',
                     onPressed: () {},
                   ),
                   Container(
@@ -66,15 +66,16 @@ class _LoginScreenState extends State<LoginScreen> {
   }
 }
 
-class SpoticastLogo extends StatelessWidget {
+class ApplicationLogo extends StatelessWidget {
   final double width;
   final double height;
 
-  SpoticastLogo({this.width, this.height});
+  ApplicationLogo({this.width, this.height});
 
   @override
   Widget build(BuildContext context) {
     return Container(
+      padding: EdgeInsets.only(top: 50),
       width: width,
       height: height,
       alignment: Alignment.center,

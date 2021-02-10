@@ -8,7 +8,7 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'SpotiCast',
+      title: 'V0rtex',
       theme: ThemeData(
         scaffoldBackgroundColor: Colors.purple[900], //Color(0xFF121212),
         textTheme: TextTheme(

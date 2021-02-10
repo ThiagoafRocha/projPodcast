@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 
 class MenuButton extends StatelessWidget {
   final Widget icon;
-  final String label;
+  final String text;
   final Function() onPressed;
 
-  MenuButton({this.icon, this.label, this.onPressed});
+  MenuButton({this.icon, this.text, this.onPressed});
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +21,7 @@ class MenuButton extends StatelessWidget {
               alignment: Alignment.centerLeft,
             ),
             Text(
-              label,
+              text,
             ),
           ],
         ),
